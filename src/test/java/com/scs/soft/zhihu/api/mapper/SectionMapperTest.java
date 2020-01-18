@@ -6,16 +6,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
-
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest(classes = ZhihuApiApplication.class)
 class SectionMapperTest {
 @Resource SectionMapper sectionMapper;
     @Test
     void getSectionsBySpecialId() {
-        List<Section> sectionList = sectionMapper.getSectionsBySpecialId("19558008");
+        List<Section> sectionList = sectionMapper.getSectionsBySpecialId("19564641");
         sectionList.forEach(System.out::println);
 
     }
